@@ -3,10 +3,28 @@
     top:0;
     left:0;
 }
-
+//// #e6e6e8 border color
 body html {
-    
+
+    background-color:white;
 }
+header {
+
+    background-image: linear-gradient(
+        
+    );
+}
+
+
+main {
+
+}
+
+
+section {
+
+}
+
 
 
 
