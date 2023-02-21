@@ -1,22 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Merriweather:wght@300&family=Raleway:wght@100&display=swap');
+
+
 * {
     margin:0;
     top:0;
     left:0;
 }
 //// #e6e6e8 border color
-body html {
 
+//font-family: 'Lato', sans-serif;
+//font-family: 'Merriweather', serif;
+//font-family: 'Raleway', sans-serif;
+
+
+body html {
+    margin: 0;
+    padding: 0;
     background-color:white;
 }
 header {
-
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Merriweather', serif;
     background-image: linear-gradient(
         
     );
 }
 
+nav,li,a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+a:hover {
+    color: 
+}
 
 main {
+    border:2px solid #e6e6e8;
+    background-image: linear-gradient(
+
+    );
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -25,9 +52,19 @@ section {
 
 }
 
+#block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 33%;
+    height: 5vh;
+}
 
 
 
 
+footer {
+    font-family: 'Lato', sans-serif;
+}
 
 
