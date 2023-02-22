@@ -64,62 +64,60 @@
     
 </section>
 
-<div id="block">
 
-    <section>
-        <ion-icon name="briefcase" class="bag"></ion-icon>
-        <h1 aria-label="traveling packing checklist">Packing Checklist</h1>
-        <p class="packing-areatop">Enter the email to receive your packing checklist</p>
-          <input class="packing-areatop" placeholder="Enter your email here" type="email" name="email" id="name" required>
+<section>
+<div id="packing">
+<ion-icon name="briefcase" class="bag"></ion-icon>
+<h1 aria-label="traveling packing checklist">Packing Checklist</h1>
+<p class="packing-areatop">Enter the email to receive your packing checklist</p>
+<input class="packing-areatop" placeholder="Enter your email here" type="email" name="email" id="name" required>
+      
+  <form action="mailto:" method="post" enctype="text/plain">
+  <fieldset class="packing-field"><legend>Check the boxes and send reminder email to yourself.</legend>
+  <label class="checkbox-area">
+  <input type="checkbox" name="passport">Passport</label><br>
+  <label class="checkbox-area">
+  <input type="checkbox" name="sunscreen">Sunscreen</label><br>
+  <label class="checkbox-area">
+  <input type="checkbox" name="toothbrush">Toothbrush</label><br>
+  <label class="checkbox-area">
+  <input type="checkbox" name="sunglasses">Sunglasses</label><br>
+  <label class="checkbox-area">
+  <input type="checkbox" name="underwear">Underwear</label><br>
+  <label class="checkbox-area">
+  <input type="checkbox" name="largehat">Large hat</label><br>
+  <label class="checkbox-area">
+  <input type="checkbox" name="powerbank">Powerbank</label>
+  <label>
+  </fieldset>
+  <input type="submit" id="submit" target="mailto:youremail@example.com?subject=Packing Checklist&body=Passport: %0D%0ASunscreen: %0D%0AToothbrush: %0D%0ASunglasses: %0D%0AUnderwear: %0D%0ALarge hat: %0D%0APowerbank: %0D%0A" class="packing-area-bottom" aria-required="true" value="Send Checklist">
+  </form></section></div>
       
       
-         
-        <form action="mailto:" method="post" enctype="text/plain">
-        <fieldset><legend>Check the boxes and send reminder email to yourself.</legend>
-        <label class="checkbox-area">
-        <input type="checkbox" name="passport">Passport</label><br>
-        <label class="checkbox-area">
-        <input type="checkbox" name="sunscreen">Sunscreen</label><br>
-        <label class="checkbox-area">
-        <input type="checkbox" name="toothbrush">Toothbrush</label><br>
-        <label class="checkbox-area">
-        <input type="checkbox" name="sunglasses">Sunglasses</label><br>
-        <label class="checkbox-area">
-        <input type="checkbox" name="underwear">Underwear</label><br>
-        <label class="checkbox-area">
-        <input type="checkbox" name="largehat">Large hat</label><br>
-        <label class="checkbox-area">
-        <input type="checkbox" name="powerbank">Powerbank</label>
-        <label>
-      </fieldset>
-      <input type="submit" id="submit" target="mailto:youremail@example.com?subject=Packing Checklist&body=Passport: %0D%0ASunscreen: %0D%0AToothbrush: %0D%0ASunglasses: %0D%0AUnderwear: %0D%0ALarge hat: %0D%0APowerbank: %0D%0A" class="packing-area-bottom" aria-required="true" value="Send Checklist">
-      </form></section>
+  <section>
+  <div id="news"> 
+  <ion-icon class="bag" name="book"></ion-icon>
       
+  <h3>Subscribe to our Newsletter</h3>
+  <fieldset><legend>Sign up for weekly death letter</legend>
+  <form method="post" action="https://formdump.codeinstitute.net/">
+  <label for="name">
+  <input class="input-news" type="text" name="name" id="name" placeholder="Your Name" required aria-label="sign up for newsletter"><br>
+  </label>
+  <label for="email">
+  <input class="input-news" type="email" name="email" id="email" placeholder="Your Email">
+  </label></fieldset>
+  <br><label for="submit">
+  <input type="submit" name="name" id="email" class="subnews">
+  </label></form></section></div>
       
       <section>
-       
-        <ion-icon class="bag" name="book"></ion-icon>
-      <div id="news">
-      <h3>Subscribe to our Newsletter</h3>
-      <fieldset><legend>Sign up for weekly death letter</legend>
-      <form method="post" action="https://formdump.codeinstitute.net/">
-      <label for="name">
-      <input class="input-news" type="text" name="name" id="name" placeholder="Your Name" required aria-label="sign up for newsletter"><br>
-      </label>
-      <label for="email">
-      <input class="input-news" type="email" name="email" id="email" placeholder="Your Email">
-      </label></fieldset>
-      <br><label for="submit">
-      <input type="submit" name="name" id="email" class="subnews">
-      </label></form></section></div>
-      
-      <section>
       
       
-      
+       <div id="contact">
        <ion-icon name="mail" class="bag"></ion-icon><br>
        <h2>Contact Us</h2>
-       <div id="contact">
+      
        
        <fieldset><legend>Contact Us at your own risk!</legend>
        <form action="https://formdump.codeinstitute.net/" method="post">
@@ -143,10 +141,11 @@
 
 
 <footer>
-    <p>© Copyright 2023 • All rights reserved</p> <p>• Website crafted by Mats.</p>
+    <div class="bottomtext">
+    <p>© Copyright 2023 • All rights reserved <br>• Website crafted by Mats.</p>
         <p><button class="bottom-link" href="">Terms and conditions</button></p>
         <p><button class="bottom-link" href="">Cookie Policy</button></p>
-
+    </div>
 
 
 </footer>
