@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Merriweather:wght@300&family=Raleway:wght@100&display=swap');
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 381px) {
     nav {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     li {
-      margin: 10px 0;
+      margin: 3px 0;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      margin-bottom: 5%;
     }
   }
 @media screen and (min-width: 800px) {
@@ -15,7 +22,7 @@
       margin-top: 0;
     }
     li {
-      margin: 0 20px;
+      margin: 0 3px;
     }
     a {
       font-size: 1.5rem;
@@ -26,6 +33,19 @@
     #block section {
       display: block;
     }
+    nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    margin: 3px 0;
+  }
+  a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
   }
   
   
@@ -43,6 +63,9 @@
 
 
 html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -52,10 +75,12 @@ header {
     display: flex;
     margin-top:2%;
     padding-bottom: 3%;
+    padding: 2%;
+    border-radius: 15px;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
     font-family: 'Merriweather', serif;
-    background-image: linear-gradient(55deg, #963c96, #3C1874, #ffbe5a);
+    background-image: linear-gradient(55deg, #ffbe5a, #3C1874, #963c96 );
 
         
 
@@ -94,10 +119,8 @@ a:hover {
     transform: skewY(-30deg);
 }
 main {
-   
-    background-image: linear-gradient(
-
-    );
+    background-color:white;
+    margin: 10% 10% 10% 10%;  
     font-family: 'Raleway', sans-serif;
 
 }
@@ -121,25 +144,35 @@ h1, h2, h3 {
 
 p {
     text-align: justify;
-    font-size:1em;
+    font-size:1.1em;
     line-height: 1.9;
-    -ms-word-break: normal;
+    color:black;
+    
     word-break: normal;
     margin:0 auto;
     padding:0.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    overflow: hidden;
+    //font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    
     text-overflow: ellipsis;
 }
 
 .iframe-con {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-inline: auto;
+    align-items: stretch;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 5%;
     width: 100%;
-
+}
+iframe {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 40vh;
 }
 .items {
     position: relative;
