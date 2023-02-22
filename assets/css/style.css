@@ -1,57 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Merriweather:wght@300&family=Raleway:wght@100&display=swap');
-
-@media screen and (max-width: 381px) {
-    header {
-        margin: auto;
-    }
-    nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    li {
-      margin: 3px 0;
-    }
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-      margin-bottom: 2%;
-    }
-  }
-
-@media screen and (max-width: 768px) {
-    #block section {
-      display: block;
-    }
-    nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  li {
-    margin: 3px 0;
-  }
-  a {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
-  }
-
-* {
+*{
     margin:0;
     top:0;
     left:0;
 }
 
-
-
 html, body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #373e98;
   }
   
 header {
@@ -101,7 +58,7 @@ a:hover {
     transform: skewY(-30deg);
 }
 main {
-    background-color:white;
+    background-color: #373e98;
     margin: 2% 5% 5% 5%;  
     font-family: 'Raleway', sans-serif;
 
@@ -117,7 +74,14 @@ section {
 }
 
 #bottomthree {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+}
+@media screen and (max-width:381px) and (max-width:600px) and (max-width:768px){
+     section #bottomthree {
+        grid-template-columns: 1fr;        
+    }
 }
 
 h1, h2, h3 {
