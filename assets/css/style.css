@@ -19,6 +19,8 @@ body html {
 }
 header {
     display: flex;
+    margin-top: 2%;
+    padding-bottom: 3%;
     justify-content: center;
     justify-items: center;
     font-family: 'Merriweather', serif;
@@ -31,15 +33,36 @@ header {
 nav,li,a {
     
     display: inline-block;
+    margin-top: 2%;
     list-style: none;    
     text-decoration: none;
-
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding-left:0.8rem;
+    color: #F1B24A;
+    
 }
 
 a:hover {
-    color: 
+    color:#F92C85;
+    transform: scale(1.5)skewY(5deg);
+}
+.skull {
+    cursor: pointer;
+    color:#F92C85;
+    font-size:4.5rem;
+    transition: transform 1.5s;
 }
 
+.skull:hover {
+    transform: skewY(-0deg)scale(1.5);
+    transform: skewY(-5deg)scale(1.5);
+    transform: skewY(-10deg)scale(1.5);
+    transform: skewY(-15deg);
+    transform: skewY(-20deg);
+    transform: skewY(-25deg);
+    transform: skewY(-30deg);
+}
 main {
     border:2px solid #e6e6e8;
     background-image: linear-gradient(
